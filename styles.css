@@ -93,43 +93,16 @@ nav {
     50% { transform: translateY(-20px); }
 }
 
-.crown-lightning {
-    width: 350px;
-    height: 350px;
+.logo-image {
+    width: 400px;
+    height: auto;
+    filter: drop-shadow(0 10px 40px rgba(255, 153, 0, 0.4));
 }
 
-.crown {
-    fill: url(#crownGradient);
-    filter: drop-shadow(0 10px 30px rgba(255, 153, 0, 0.5));
-}
-
-.lightning {
-    fill: url(#lightningGradient);
-    filter: drop-shadow(0 5px 25px rgba(0, 191, 255, 0.7));
-}
-
-.halo {
-    stroke: url(#crownGradient);
-    stroke-width: 10;
-    fill: none;
-    filter: drop-shadow(0 0 15px rgba(255, 165, 0, 0.6));
-}
-
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.6; }
-}
-
-.brand-name {
-    font-size: 5rem;
-    font-weight: 900;
-    color: #ff9900;
-    letter-spacing: 12px;
-    margin: 2rem 0;
-    text-shadow: 
-        0 0 30px rgba(255, 153, 0, 0.8),
-        0 0 60px rgba(255, 153, 0, 0.5),
-        0 8px 15px rgba(0, 0, 0, 0.9);
+@media (max-width: 768px) {
+    .logo-image {
+        width: 280px;
+    }
 }
 
 .tagline {
@@ -280,11 +253,6 @@ footer {
         font-size: 1.2rem;
     }
 
-    .brand-name {
-        font-size: 3rem;
-        letter-spacing: 6px;
-    }
-
     .tagline {
         font-size: 1rem;
     }
@@ -292,11 +260,6 @@ footer {
     .cta-button {
         font-size: 1.5rem;
         padding: 18px 50px;
-    }
-
-    .crown-lightning {
-        width: 250px;
-        height: 250px;
     }
 
     .features-container {
