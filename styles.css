@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(135deg, #1a0f00 0%, #2d1a00 50%, #1a0f00 100%);
+    background: #0a0a0a;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -21,7 +21,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    background: rgba(26, 15, 0, 0.9);
+    background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
 }
 
@@ -104,16 +104,15 @@ nav {
 }
 
 .lightning {
-    fill: #1e88e5;
-    filter: drop-shadow(0 5px 20px rgba(30, 136, 229, 0.7));
+    fill: url(#lightningGradient);
+    filter: drop-shadow(0 5px 25px rgba(0, 191, 255, 0.7));
 }
 
 .halo {
-    stroke: #ff9900;
-    stroke-width: 8;
+    stroke: url(#crownGradient);
+    stroke-width: 10;
     fill: none;
-    filter: drop-shadow(0 0 20px rgba(255, 153, 0, 0.8));
-    animation: pulse 2s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px rgba(255, 165, 0, 0.6));
 }
 
 @keyframes pulse {
@@ -262,7 +261,7 @@ footer {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background: rgba(26, 15, 0, 0.98);
+        background: rgba(10, 10, 10, 0.98);
         width: 100%;
         text-align: center;
         transition: 0.3s;
